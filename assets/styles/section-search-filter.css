@@ -1,0 +1,97 @@
+/************ SearchBar *************/
+.info-group {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.4rem;
+  line-height: 15px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+form i {
+  color: rgb(8, 8, 8);
+  background-color: var(--main-bg-color);
+  border-radius: 20px 0 0 20px;
+  padding: 18px;
+}
+
+#search {
+  outline: none;
+  padding: 16px;
+  width: 190px;
+  border: none;
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#btn-search {
+  background-color: var(--main-color);
+  color: rgb(252, 252, 252);
+  border: none;
+  border-radius: 0 20px 20px 0;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+/************** FilterBar **************/
+
+.filterBar {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn i {
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid var(--main-border-color);
+  border-radius: 25px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--filter-bg-color);
+}
+
+.infoBar {
+  display: flex;
+  align-items: center;
+}
+
+.infoBar i {
+  border: 1px solid var(--main-border-color);
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.infoBar p {
+  padding-left: 10px;
+  font-size: 1.05rem;
+}
