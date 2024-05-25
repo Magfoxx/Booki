@@ -1,50 +1,68 @@
-/************ SearchBar *************/
+/* Headline */
 .info-group {
   display: flex;
   flex-direction: column;
 }
 
-h1 {
-  font-size: 1.4rem;
+.headline {
   line-height: 15px;
 }
 
-form {
+.headline h1 {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.headline p {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+/* Search-bar */
+.search-bar {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  max-width: 377px;
+  max-height: 50px;
+  background-color: #f9f9f9;
+  margin: 25px 0;
+
 }
 
-form i {
-  color: rgb(8, 8, 8);
-  background-color: var(--main-bg-color);
-  border-radius: 20px 0 0 20px;
-  padding: 18px;
-}
-
-#search {
-  outline: none;
-  padding: 16px;
-  width: 190px;
+.location-icon i {
+  color: black;
+  padding: 0 15px;
   border: none;
-  border-top: 1px solid var(--main-bg-color);
-  border-bottom: 1px solid var(--main-bg-color);
+}
+
+.search-bar input {
+  background-color: white;
+  height: 48px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
   text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
+  width: 100%;
 }
 
 #btn-search {
-  background-color: var(--main-color);
-  color: rgb(252, 252, 252);
   border: none;
-  border-radius: 0 20px 20px 0;
-  width: 150px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 17px;
+  border-radius: 0 15px 15px 0;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
   cursor: pointer;
+  outline: none;
+  height: 48px;
+  padding: 0 15px
+}
+
+#btn-search-phone {
+  display: none;
 }
 
 /************** FilterBar **************/
@@ -52,32 +70,43 @@ form i {
 .filterBar {
   display: flex;
   align-items: center;
-  font-weight: bold;
-  gap: 15px;
-  margin: 20px 0;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.btn i {
-  margin: 0 5px;
-  font-size: 1.2rem;
+.btn-container {
+  display: flex;
+  gap: 10px;
 }
 
 .btn {
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   border: 1px solid var(--main-border-color);
   border-radius: 25px;
-  margin: 5px;
-  transition: 0.2s;
+  padding: 10px 15px;
+
+}
+
+.btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.btn i {
+  width: 20px;
+  height: 20px;
 }
 
 .btn:hover {
   background-color: var(--filter-bg-color);
 }
+
+
 
 .infoBar {
   display: flex;
@@ -93,5 +122,5 @@ form i {
 
 .infoBar p {
   padding-left: 10px;
-  font-size: 1.05rem;
+  font-size: 16px;
 }
